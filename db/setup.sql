@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS beb_pod;
+
+CREATE DATABASE beb_pod;
