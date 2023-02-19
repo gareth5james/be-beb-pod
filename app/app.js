@@ -48,7 +48,7 @@ app.post("/api/fees", (request, response, next) => {
 });
 
 app.get("/api/hours", (request, response, next) => {
-  db.query(`SELECT * FROM opening;`)
+  db.query(`SELECT * FROM opening ORDER BY opening_id;`)
     .then((result) => {
       const opening = result.rows;
       response.status(200).send({ opening });
@@ -87,7 +87,7 @@ app.post("/api/hours", (request, response, next) => {
 });
 
 app.get("/api/products", (request, response, next) => {
-  db.query(`SELECT * FROM products;`).then((result) => {
+  db.query(`SELECT * FROM products ORDER BY products_id;`).then((result) => {
     const products = result.rows;
     response.status(200).send({ products });
   });
