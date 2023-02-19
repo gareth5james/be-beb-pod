@@ -8,6 +8,11 @@ module.exports = [
     column3: "£65",
   },
   {
+    column1: "Following initial assessment for suitability",
+    column2: "",
+    column3: "",
+  },
+  {
     column1: "Toenail surgery (per toe), nail will grow back within 12 months",
     column2: "£300",
     column3: "£300",
@@ -26,6 +31,7 @@ module.exports = [
     column2: "£50",
     column3: "£55",
   },
+  { column1: "Lacuna antifungal toenail treatment", column2: "", column3: "" },
   {
     column1: "One off payment(usually 4-6 visits - includes 1st Lamisil spray)",
     column2: "£250",

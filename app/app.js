@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/fees", (request, response, next) => {
-  db.query(`SELECT * FROM fees;`)
+  db.query(`SELECT * FROM fees SORT BY fees_id;`)
     .then((result) => {
       const fees = result.rows;
       response.status(200).send({ fees });
