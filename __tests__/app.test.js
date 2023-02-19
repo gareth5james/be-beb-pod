@@ -30,7 +30,7 @@ describe("serves fees", () => {
       .expect(200)
       .then(({ body: { fees } }) => {
         expect(fees).toBeInstanceOf(Array);
-        expect(fees.length).toBe(12);
+        expect(fees.length).toBe(14);
         fees.forEach((fee) => {
           expect(fee).toEqual(
             expect.objectContaining({
@@ -145,7 +145,7 @@ describe("posts fees", () => {
       .expect(201)
       .then(({ body: { fee } }) => {
         expect(fee).toEqual({
-          fees_id: 13,
+          fees_id: 15,
           column1: "Chicken Sandwich",
           column2: "£65",
           column3: "£68",
